@@ -1,10 +1,20 @@
 const numbers = [1, 56, 2, 4, 1, 99, 3, 5]
 
 // Your code here!
+const multiply = (accumulator, currentValue) => {
+      return accumulator * currentValue
+}
+
+const product = numbers.reduce(multiply)
+console.log(product)
 
 // Write something that takes the above array and returns the product of all the numbers
 // via multiplication
-
+const sum = (accumulator, currentValue) => {
+      return accumulator + currentValue
+}
+const total = numbers.reduce(sum)
+console.log(total)
 // Use reduce to get the sum of all the numbers
 
 // Hungry for more:
